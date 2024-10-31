@@ -139,37 +139,10 @@ html(lang="en")
 				div(class="row")
 					div(class="col-md-5")
 						dl
-							dt Source
-							dd
-								a(href="https://github.com/npq7721/rpc-explorer") github.com/npq7721/rpc-explorer
-
-								if (global.sourcecodeProjectMetadata)
-									div(class="mt-2")
-										a(href="https://github.com/npq7721/rpc-explorer", class="btn btn-primary btn-sm mr-3 mb-1 text-decoration-none")
-											i(class="fas fa-star mr-2")
-											span(class="mr-2") Star
-											span(class="badge bg-white text-dark") #{global.sourcecodeProjectMetadata.stargazers_count}
-
-										a(href="https://github.com/npq7721/rpc-explorer/fork", class="btn btn-primary btn-sm mr-3 mb-1 text-decoration-none")
-											i(class="fas fa-code-branch mr-2")
-											span(class="mr-2") Fork
-											span(class="badge bg-white text-dark") #{global.sourcecodeProjectMetadata.forks_count}
-
-
-
 							dt App Details
 							dd
-								span version: #{global.appVersion}
-								if (sourcecodeVersion)
-									br
-									span commit:
-										a(href=("https://github.com/npq7721/rpc-explorer/commit/" + sourcecodeVersion)) #{sourcecodeVersion}
-
-								br
+								span version: #{global.appVersion}<br />
 								span released: #{sourcecodeDate}
-								span(style="font-size: 0.9em;")  (
-									a(href="/changelog") changelog
-									span )
 
 							if (config.demoSite)
 								dt Public Demos
@@ -191,11 +164,11 @@ html(lang="en")
 					div(class="col-md-7 text-md-right")
 						dl
 							dd
-								p If you would like to this explorer to support your favorite coin, feel free to make request by open an <a href="https://github.com/npq7721/rpc-explorer/issues">issue</a> at my github to request coin supports.
-								button.btn.btn-primary(type="button", class="btn btn-primary", data-toggle="modal", data-target="#exampleModalCenter")
-									i(class="fas fa-heart mr-2")
-									span Support Project
-		div(id="popup-dialog")
+								p Copyright 2024
+		//- 						button.btn.btn-primary(type="button", class="btn btn-primary", data-toggle="modal", data-target="#exampleModalCenter")
+		//- 							i(class="fas fa-heart mr-2")
+		//- 							span Support Project
+		//- div(id="popup-dialog")
 		//script(src="/js/jquery.min.js", integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=")
 		script(src="/js/jquery-3.4.1.min.js", integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=")
 		script(src="/js/popper.min.js", integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut")
